@@ -1,12 +1,12 @@
 import React from 'react'
-import JsonSerever from './JsonSerever'
 import UserList from './page/UserList'
+import UseContextUser from './UseContextUser'
 
 const App = () => {
   return (
-    <JsonSerever>
+    <UseContextUser>
       <UserList/>
-    </JsonSerever>
+    </UseContextUser>
   )
 }
 

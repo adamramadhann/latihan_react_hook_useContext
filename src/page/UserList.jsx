@@ -1,14 +1,15 @@
 import React from 'react'
-import { useUserContext } from '../JsonSerever'
+import { useDataUserJson } from '../UseContextUser'
 
 const UserList = () => {
-    const {datauser, isLoading} = useUserContext()
-    if(isLoading) return <h1>Loding....</h1>
+  const {dataUser, loaidng} = useDataUserJson()
   return (
     <div>
-        {datauser.map((user) => (
-            <h1>{user.name}</h1>
-        ))}
+      {
+        dataUser.map((e) => (
+          <h1>{e.name}</h1>
+        ))
+      }
     </div>
   )
 }
