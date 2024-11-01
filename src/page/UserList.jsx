@@ -1,15 +1,15 @@
-import React from 'react'
-import { useDataUserJson } from '../UseContextUser'
+import { CreateUser } from '../UseContext/Laatihan1'
 
 const UserList = () => {
-  const {dataUser, loaidng} = useDataUserJson()
+const {data} = CreateUser()
+console.info(data)
   return (
     <div>
-      {
-        dataUser.map((e) => (
-          <h1>{e.name}</h1>
-        ))
-      }
+        {
+          data.map((e) => (
+            <h1>{e.name}</h1>
+          ))
+        }
     </div>
   )
 }
