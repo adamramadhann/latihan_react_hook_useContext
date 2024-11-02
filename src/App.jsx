@@ -1,5 +1,3 @@
-// App.js
-
 import React from 'react';
 import UserList from './page/UserList';
 import UserContext from './UseContext/Laatihan1';
