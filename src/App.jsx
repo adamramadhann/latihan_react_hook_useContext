@@ -1,13 +1,12 @@
 import React from 'react'
-import UserList from './page/UserList'
-import UseContextUser from './UseContextUser'
+import GetAll from './crud/GetAll'
 
 const App = () => {
   return (
-    <UseContextUser>
-      <UserList/>
-    </UseContextUser>
-  )
+  <div>
+    <GetAll/>
+  </div>
+  ) 
 }
 
 export default App
