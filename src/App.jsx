@@ -1,12 +1,16 @@
-import React from 'react'
-import GetAll from './crud/GetAll'
+import React from 'react';
+import UserList from './page/UserList';
+import UserContext from './UseContext/Laatihan1';
 
-const App = () => {
-  return (
-  <div>
-    <GetAll/>
-  </div>
-  ) 
+function App() {
+    return (
+        <UserContext>
+            <div>
+                <h1>Welcome to User App</h1>
+                <UserList />
+            </div>
+        </UserContext>
+    );
 }
 
-export default App
+export default App;
