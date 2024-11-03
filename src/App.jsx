@@ -1,15 +1,17 @@
 import React from 'react';
-import UserList from './page/UserList';
-import UserContext from './UseContext/Laatihan1';
+import { Route, Routes } from 'react-router-dom';
+import DetailCard from './page/useQuery/DetailCard';
+import CardJson from './page/useQuery/CardJson';
+import CardProduck from './page/Latihan/CardProduck';
+
 
 function App() {
     return (
-        <UserContext>
-            <div>
-                <h1>Welcome to User App</h1>
-                <UserList />
-            </div>
-        </UserContext>
+        <Routes>
+            {/* <Route path="/" element={<CardJson />} /> */}
+            <Route path="/detail/:id" element={<DetailCard />} />
+            <Route path="/" element={<CardProduck />} />
+        </Routes>
     );
 }
 
